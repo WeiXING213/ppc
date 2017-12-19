@@ -1,17 +1,37 @@
-//
-//  main.cpp
-//  testing
-//
-//  Created by Wei XING on 19/12/2017.
-//  Copyright © 2017 Wei XING. All rights reserved.
-//
-
+//Declaration and definition
 #include <iostream>
+using namespace std;
 
-int main(int argc, const char * argv[]) {
-    // insert code here...
-    std::cout << "Hello, World!\n";
-    return 0;
-    //woooo
-    //new
+extern int i;
+
+extern float f(float);
+
+float b;
+
+float f(float a)
+{
+    return a + 1.0;
+};
+
+int i;
+
+int h(int x)
+{
+    return x + 1;
+}
+
+int main()
+{
+    b = 1.0;
+    i = 2;
+    f(b);
+    h(i);
+    
+    cout << b << std::endl;
+    cout << i << std::endl;
+    cout << f(b) << std::endl;
+    cout << h(i) << std::endl;
+
+
+
 }
