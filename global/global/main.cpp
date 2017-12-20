@@ -13,10 +13,12 @@ int globe;
 
 void func();
 
+static int fs;
 
 int main(int argc, const char * argv[]) {
     globe = 12;
     cout << globe << endl;
-    func();
+    for(int x=0; x < 10; x++)
+        func();
     cout << globe << endl;
 }
