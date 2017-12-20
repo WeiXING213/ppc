@@ -7,9 +7,16 @@
 //
 
 #include <iostream>
+using namespace std;
+
+int globe;
+
+void func();
+
 
 int main(int argc, const char * argv[]) {
-    // insert code here...
-    std::cout << "Hello, World!\n";
-    return 0;
+    globe = 12;
+    cout << globe << endl;
+    func();
+    cout << globe << endl;
 }
